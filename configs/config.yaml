@@ -1,0 +1,5 @@
+log_dir: './log'               # Директория с логами
+report_dir: './reports'         # Директория для сохранения отчетов
+report_size: 10                 # Количество URL'ов, включаемых в отчет
+tablesorter_js: './jquery.tablesorter.min.js'  # Путь к файлу с таблицей сортировки
+report_template: './reports/report.html'  # Путь к шаблону для создания отчета
