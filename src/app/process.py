@@ -25,7 +25,7 @@ def load_config(config_path):
 def find_latest_log(log_dir):
     log_files = []
 
-    log_pattern = re.compile(r"nginx-access-ui\.log-(\d{8})\.*")
+    log_pattern = re.compile(r"nginx-access-ui\.log-(\d{8})(\.(?:gz|log))?$")
 
     for f in os.listdir(log_dir):
         match = log_pattern.match(f)
